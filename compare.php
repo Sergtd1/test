@@ -1,4 +1,3 @@
-
 //!/usr/bin/php
 <?php 
 # This php script compares 2 mysql databases (source database / target database).After it generates sql script for synchronization structure.
@@ -38,8 +37,9 @@ foreach ($argv as $item)
       if ($b_db)  
       {
         unset($b_db); 
-        $b_db=new dbo();
       }
+      $b_db=new dbo();
+      
 
       switch ($param_name[2])
       {
